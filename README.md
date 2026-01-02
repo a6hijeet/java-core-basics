@@ -1,0 +1,1 @@
+This repository contains structured Core Java leanring, covering OOP, Collections, Streams, concurrency.
