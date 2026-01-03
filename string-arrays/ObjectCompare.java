@@ -46,5 +46,15 @@ public class ObjectCompare {
 
     System.out.println(obj1 == obj2);
     System.out.println(obj1.equals(obj2));
+
+
+    String s1 = "Demo";
+    String s2 = "Demo";
+    String s3 = new String("Demo");
+
+    System.out.println(s1 == s2); // true. poiting to same memory
+    System.out.println(s1 == s3); // false. pointing to different memory
+    System.out.println(s1.equals(s2)); // true. this checks the value
+    System.out.println(s1.equals(s3)); // true. this checks the value
   }
 }
