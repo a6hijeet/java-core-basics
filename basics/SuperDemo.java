@@ -20,6 +20,6 @@ class B extends A {
 
 public class SuperDemo {
   public static void main(String[] args) {
-    B obj = new B(3);
+    new B(3);
   }
 }
