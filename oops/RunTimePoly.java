@@ -1,3 +1,4 @@
+// Runtime polymorphism
 class A {
   public void show() {
     System.out.println("From A");
@@ -18,6 +19,9 @@ class C extends A {
 
 public class RunTimePoly {
   public static void main(String[] args) {
+    // Which method to run will be decided at run time
+    // Run time polymorphism 
+    // Dynamic method dispatch
     A obj = new A();
     obj.show();
 
