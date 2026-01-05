@@ -43,7 +43,7 @@ public class IODemo {
       b1.close();
     }
     
-    // Using try to close resource.
+    // Using try with resource.
     try(BufferedReader b2 = new BufferedReader(new InputStreamReader(System.in))) {
       System.out.println("Try Enter name");
       String name1 = b2.readLine();
