@@ -61,11 +61,7 @@ public class SortListDemo {
     s.add(new Student("Shane", 22));
 
 
-    Comparator<Student> sc = new Comparator<Student>() {
-      public int compare(Student s1, Student s2) {
-        return s1.age < s2.age ? 1 : -1;
-      }
-    };
+    Comparator<Student> sc = (Student s1, Student s2) -> s1.age < s2.age ? 1 : -1;
 
     Collections.sort(s, sc);
 
