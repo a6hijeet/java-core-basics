@@ -1,6 +1,7 @@
 package collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
@@ -13,7 +14,12 @@ public class ListDemo {
       al.add(i);
     }
     al.remove(2);
-    System.out.println(al);
+    Iterator<Integer> values = al.iterator();
+
+    while(values.hasNext()) {
+      System.out.println(values.next());
+    }
+
 
     List<Integer> v = new Vector<>();
     for(int i=1; i<=5; i++){
