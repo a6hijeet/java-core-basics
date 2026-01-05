@@ -16,9 +16,9 @@ public class MapDemo {
     hm.put("String5", 5);
     hm.put("String1", 5);
 
-    System.out.println(hm.values());
-    System.out.println(hm.keySet());
-    System.out.println(hm.get("String3"));
+    for(String key: hm.keySet()) {
+      System.out.println(key + " : " + hm.get(key));
+    }
 
 
     Map<String, Integer> tm = new TreeMap<>();
