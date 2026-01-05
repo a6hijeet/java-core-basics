@@ -4,11 +4,11 @@ interface Computer {
   void code();
 }
 
-class Desktop implements Computer {
+/* class Desktop implements Computer {
   public void code() {
     System.out.println("Code in desktop");
   }
-}
+} */
 
 class Laptop implements Computer {
   public void code() {
@@ -24,7 +24,7 @@ class Developer {
 
 public class InterfaceReference {
   public static void main(String[] args) {
-    Computer d = new Desktop();
+    Computer d = () -> System.out.println("Code in desktop"); // Lamda function
     Computer l = new Laptop();
   
     Developer dev = new Developer();
