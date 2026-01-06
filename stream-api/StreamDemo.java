@@ -21,6 +21,11 @@ public class StreamDemo {
       .reduce(0, (c,e) -> c+e);
     System.out.println(res1);
 
+    Stream<Integer> sortedNums = nums.stream()
+      .filter(n -> n%2==0)
+      .sorted();
+    sortedNums.forEach(n -> System.out.println(n));
+
 
 
   }
